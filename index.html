@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - AWS Data Engineer Portfolio</title>
+    <meta name="description" content="AWS Data Engineer specializing in cloud architecture, data pipelines, and machine learning solutions.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body data-theme="blue">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="pp.jpeg" alt="Omkar">
+            </div>
+            <div class="profile-name">
+                <h2>Omkar Verma</h2>
+                <p class="profile-tagline">AWS Data Engineer</p>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#home" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#experience" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Work Experience</span>
+            </a>
+            <a href="#projects" class="nav-item">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#about" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>About Me</span>
+            </a>
+            <a href="#contact" class="nav-item">
+                <i class="fas fa-envelope"></i>
+                <span>Get in Touch</span>
+            </a>
+        </nav>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switcher">
+            <h4>Choose Theme</h4>
+            <div class="theme-colors">
+                <button class="theme-btn" data-theme="green" title="Natural Green">
+                    <span class="theme-color" style="background: linear-gradient(135deg, #4a9d6b, #7bcfa2);"></span>
+                </button>
+                <button class="theme-btn active" data-theme="blue" title="Ocean Blue">
+                    <span class="theme-color" style="background: linear-gradient(135deg, #2563eb, #60a5fa);"></span>
+                </button>
+                <button class="theme-btn" data-theme="purple" title="Royal Purple">
+                    <span class="theme-color" style="background: linear-gradient(135deg, #7c3aed, #a78bfa);"></span>
+                </button>
+                <button class="theme-btn" data-theme="teal" title="Modern Teal">
+                    <span class="theme-color" style="background: linear-gradient(135deg, #14b8a6, #5eead4);"></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Dark Mode Toggle -->
+        <div class="dark-mode-toggle">
+            <button id="darkModeBtn" class="dark-mode-btn" title="Toggle Dark Mode">
+                <i class="fas fa-moon" id="darkModeIcon"></i>
+            </button>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <div class="scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <!-- Animated Background Elements -->
+            <div class="tech-animation">
+                <!-- 3D Rain Effect with Water Ripples -->
+                <div class="rain-effect">
+                    <canvas id="rainCanvas" class="rain-canvas"></canvas>
+                    <div class="ripples-container" id="ripplesContainer"></div>
+                </div>
+                
+                <!-- Matrix Rain Effect -->
+                <div class="matrix-rain">
+                    <div class="matrix-column" data-delay="0">Python</div>
+                    <div class="matrix-column" data-delay="2">Pandas</div>
+                    <div class="matrix-column" data-delay="4">NumPy</div>
+                    <div class="matrix-column" data-delay="1">PySpark</div>
+                    <div class="matrix-column" data-delay="3">AWS</div>
+                    <div class="matrix-column" data-delay="5">SQL</div>
+                    <div class="matrix-column" data-delay="6">Docker</div>
+                    <div class="matrix-column" data-delay="7">Kafka</div>
+                    <div class="matrix-column" data-delay="8">Airflow</div>
+                    <div class="matrix-column" data-delay="9">Spark</div>
+                </div>
+                
+                <!-- Floating Tech Icons -->
+                <div class="floating-icons">
+                    <i class="fab fa-aws floating-icon" data-speed="slow"></i>
+                    <i class="fas fa-database floating-icon" data-speed="medium"></i>
+                    <i class="fab fa-python floating-icon" data-speed="fast"></i>
+                    <i class="fab fa-docker floating-icon" data-speed="slow"></i>
+                    <i class="fas fa-cloud floating-icon" data-speed="medium"></i>
+                    <i class="fas fa-chart-line floating-icon" data-speed="fast"></i>
+                </div>
+                
+                <!-- Particle System -->
+                <div class="particles">
+                    <div class="particle" data-size="small"></div>
+                    <div class="particle" data-size="medium"></div>
+                    <div class="particle" data-size="large"></div>
+                    <div class="particle" data-size="small"></div>
+                    <div class="particle" data-size="medium"></div>
+                    <div class="particle" data-size="small"></div>
+                    <div class="particle" data-size="large"></div>
+                    <div class="particle" data-size="medium"></div>
+                </div>
+                
+                <!-- Network Connections -->
+                <div class="network-bg">
+                    <svg class="network-svg" viewBox="0 0 1200 800">
+                        <g class="network-lines">
+                            <line class="network-line" x1="100" y1="100" x2="300" y2="200" />
+                            <line class="network-line" x1="300" y1="200" x2="500" y2="150" />
+                            <line class="network-line" x1="500" y1="150" x2="700" y2="250" />
+                            <line class="network-line" x1="700" y1="250" x2="900" y2="180" />
+                            <line class="network-line" x1="200" y1="400" x2="400" y2="350" />
+                            <line class="network-line" x1="400" y1="350" x2="600" y2="400" />
+                            <line class="network-line" x1="600" y1="400" x2="800" y2="320" />
+                        </g>
+                        <g class="network-nodes">
+                            <circle class="network-node" cx="100" cy="100" r="4" />
+                            <circle class="network-node" cx="300" cy="200" r="5" />
+                            <circle class="network-node" cx="500" cy="150" r="4" />
+                            <circle class="network-node" cx="700" cy="250" r="6" />
+                            <circle class="network-node" cx="900" cy="180" r="4" />
+                            <circle class="network-node" cx="200" cy="400" r="5" />
+                            <circle class="network-node" cx="400" cy="350" r="4" />
+                            <circle class="network-node" cx="600" cy="400" r="5" />
+                            <circle class="network-node" cx="800" cy="320" r="4" />
+                        </g>
+                    </svg>
+                </div>
+                
+                <div class="floating-code">
+                    <span class="code-snippet">SELECT * FROM data</span>
+                    <span class="code-snippet">import pandas as pd</span>
+                    <span class="code-snippet">aws s3 sync</span>
+                    <span class="code-snippet">docker build -t</span>
+                    <span class="code-snippet">lambda function</span>
+                </div>
+                <div class="geometric-shapes">
+                    <div class="shape circle"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape square"></div>
+                    <div class="shape hexagon"></div>
+                </div>
+                <div class="data-flow">
+                    <div class="flow-line line-1"></div>
+                    <div class="flow-line line-2"></div>
+                    <div class="flow-line line-3"></div>
+                </div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <h1 class="hero-title typing-text" id="typing-text-main">Hi, I'm Omkar Verma</h1>
+                    <p class="hero-subtitle">Data Engineer with 3.6+ years of experience</p>
+                    <p class="hero-description">I specialize in data extraction, preparation, and creating insightful reports for clients. I excel at working with cross-functional teams and possess strong leadership skills.</p>
+                </div>
+                <div class="subtitle-section">
+                    <div class="learn-more-section">
+                        <a href="#skills" class="learn-more-btn">
+                            Learn more
+                            <div class="learn-more-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 3D Animated Terminal -->
+            <div class="terminal-container">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <div class="terminal-btn close"></div>
+                            <div class="terminal-btn minimize"></div>
+                            <div class="terminal-btn maximize"></div>
+                        </div>
+                        <div class="terminal-title">terminal — data_engineering_pipeline</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-content" id="terminalContent">
+                            <div class="terminal-line">
+                                <span class="prompt">omkar@aws-data-engineer:~$</span>
+                                <span class="command" id="typingCommand"></span>
+                                <span class="cursor" id="terminalCursor">|</span>
+                            </div>
+                            <div class="terminal-output" id="terminalOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Skills Section -->
+        <section id="skills" class="skills-section scroll-animate">
+            <h3>Key Skills</h3>
+            <div class="skills-container">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">SQL</div>
+                <div class="skill-tag">AWS</div>
+                <div class="skill-tag">CI/CD Integration</div>
+                <div class="skill-tag">Git</div>
+                <div class="skill-tag">Data Quality</div>
+                <div class="skill-tag">Apache Spark</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">Kubernetes</div>
+                <div class="skill-tag">Airflow</div>
+                <div class="skill-tag">Snowflake</div>
+                <div class="skill-tag">Redshift</div>
+                <div class="skill-tag">ETL/ELT</div>
+                <div class="skill-tag">Data Lakes</div>
+                <div class="skill-tag">Apache Kafka</div>
+                <div class="skill-tag">Terraform</div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="experience-section scroll-animate">
+            <h3>Work Experience</h3>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">2023 - Present</div>
+                    <div class="experience-content">
+                        <h4>Senior AWS Data Engineer</h4>
+                        <h5>Tech Company Inc.</h5>
+                        <ul>
+                            <li>Lead data engineering initiatives across multiple cross-functional teams</li>
+                            <li>Built scalable data pipelines processing 10TB+ daily using AWS services</li>
+                            <li>Reduced infrastructure costs by 40% through optimization and automation</li>
+                            <li>Implemented real-time streaming solutions using Kinesis and Lambda</li>
+                            <li>Mentored junior engineers and established best practices for data quality</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">2021 - 2023</div>
+                    <div class="experience-content">
+                        <h4>Data Engineer</h4>
+                        <h5>StartupCorp</h5>
+                        <ul>
+                            <li>Designed and implemented real-time analytics platform for customer insights</li>
+                            <li>Migrated legacy systems to cloud infrastructure reducing operational overhead by 60%</li>
+                            <li>Established MLOps practices for automated model deployment and monitoring</li>
+                            <li>Built ETL pipelines processing multi-source data using Apache Spark and Airflow</li>
+                            <li>Collaborated with data science teams to productionize machine learning models</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-date">2019 - 2021</div>
+                    <div class="experience-content">
+                        <h4>Junior Data Analyst</h4>
+                        <h5>Data Solutions Ltd.</h5>
+                        <ul>
+                            <li>Built comprehensive reporting dashboards using Tableau and Power BI</li>
+                            <li>Optimized SQL queries reducing report generation time by 70%</li>
+                            <li>Automated data collection processes from multiple API sources</li>
+                            <li>Performed data quality assessments and implemented validation frameworks</li>
+                            <li>Supported business stakeholders with ad-hoc analysis and insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-animate">
+            <h3>Featured Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>Real-time Analytics Platform</h4>
+                        <div class="project-description">
+                            <p>Built a comprehensive real-time analytics platform using modern AWS services to process and analyze streaming data at scale. The system handles over 1 million events per hour with sub-second latency.</p>
+                            
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Real-time data ingestion using AWS Kinesis Data Streams</li>
+                                <li>Serverless processing with AWS Lambda functions</li>
+                                <li>High-performance storage with DynamoDB for real-time queries</li>
+                                <li>Interactive dashboards using QuickSight for business insights</li>
+                                <li>Auto-scaling capabilities to handle traffic spikes</li>
+                                <li>Cost-optimized architecture reducing operational expenses by 45%</li>
+                            </ul>
+
+                            <p><strong>Technical Challenges Solved:</strong></p>
+                            <ul>
+                                <li>Implemented event deduplication and ordering mechanisms</li>
+                                <li>Built fault-tolerant error handling and retry logic</li>
+                                <li>Optimized DynamoDB partition keys for even data distribution</li>
+                                <li>Created monitoring and alerting system for proactive issue detection</li>
+                            </ul>
+
+                            <p><strong>Business Impact:</strong></p>
+                            <p>The platform enabled real-time decision making for the business, improved customer experience through faster insights, and reduced data processing time from hours to seconds.</p>
+                        </div>
+                        <div class="tech-stack">
+                            <span>AWS Kinesis</span>
+                            <span>Lambda</span>
+                            <span>DynamoDB</span>
+                            <span>QuickSight</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>ML Model Deployment Pipeline</h4>
+                        <div class="project-description">
+                            <p>Designed and implemented a complete MLOps pipeline that revolutionized how machine learning models are deployed and managed in production. The system reduced deployment time from weeks to minutes while ensuring model quality and reliability.</p>
+                            
+                            <p><strong>Key Components:</strong></p>
+                            <ul>
+                                <li>Automated model training using Amazon SageMaker with hyperparameter tuning</li>
+                                <li>CI/CD pipeline integration with AWS CodePipeline and CodeBuild</li>
+                                <li>Containerized model deployment using Docker and Amazon ECS</li>
+                                <li>API Gateway for secure and scalable model serving</li>
+                                <li>Model monitoring and drift detection mechanisms</li>
+                                <li>A/B testing framework for model performance comparison</li>
+                            </ul>
+
+                            <p><strong>Advanced Features:</strong></p>
+                            <ul>
+                                <li>Blue-green deployment strategy for zero-downtime releases</li>
+                                <li>Automated model rollback based on performance metrics</li>
+                                <li>Data lineage tracking and model versioning</li>
+                                <li>Integration with feature stores for consistent data access</li>
+                            </ul>
+
+                            <p><strong>Results:</strong></p>
+                            <p>The pipeline increased deployment frequency by 10x, improved model reliability by 99.9%, and enabled data scientists to focus on model development rather than deployment complexities.</p>
+                        </div>
+                        <div class="tech-stack">
+                            <span>SageMaker</span>
+                            <span>CodePipeline</span>
+                            <span>Docker</span>
+                            <span>API Gateway</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>Enterprise Data Lake</h4>
+                        <div class="project-description">
+                            <p>Architected and built a comprehensive enterprise data lake solution capable of handling petabyte-scale data with automated governance, security, and compliance features. The platform serves as the central data repository for the entire organization.</p>
+                            
+                            <p><strong>Architecture Overview:</strong></p>
+                            <ul>
+                                <li>Multi-tier storage architecture using Amazon S3 with lifecycle policies</li>
+                                <li>AWS Glue for automated data cataloging and ETL processes</li>
+                                <li>Amazon Athena for serverless SQL queries on large datasets</li>
+                                <li>Lake Formation for fine-grained access control and governance</li>
+                                <li>CloudTrail integration for comprehensive audit logging</li>
+                                <li>Cross-region replication for disaster recovery</li>
+                            </ul>
+
+                            <p><strong>Data Governance Features:</strong></p>
+                            <ul>
+                                <li>Automated data classification and tagging</li>
+                                <li>PII detection and encryption at rest and in transit</li>
+                                <li>Role-based access control with IAM integration</li>
+                                <li>Data quality monitoring and validation frameworks</li>
+                                <li>Compliance reporting for GDPR and SOX requirements</li>
+                            </ul>
+
+                            <p><strong>Performance Optimizations:</strong></p>
+                            <ul>
+                                <li>Partitioning strategies for optimal query performance</li>
+                                <li>Columnar storage formats (Parquet) for faster analytics</li>
+                                <li>Intelligent tiering for cost optimization</li>
+                                <li>Query result caching and optimization</li>
+                            </ul>
+
+                            <p><strong>Business Value:</strong></p>
+                            <p>The data lake enabled self-service analytics for business users, reduced data preparation time by 80%, and provided a foundation for advanced analytics and machine learning initiatives across the organization.</p>
+                        </div>
+                        <div class="tech-stack">
+                            <span>S3</span>
+                            <span>Glue</span>
+                            <span>Athena</span>
+                            <span>Lake Formation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section scroll-animate">
+            <h3>Education & Certifications</h3>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>Master of Science in Data Science</h4>
+                        <h5>University Name</h5>
+                        <p>2017 - 2019</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>AWS Certified Solutions Architect</h4>
+                        <h5>Amazon Web Services</h5>
+                        <p>2022</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>AWS Certified Data Analytics</h4>
+                        <h5>Amazon Web Services</h5>
+                        <p>2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-animate">
+            <h3>About Me</h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate AWS Data Engineer with over 3.6 years of experience in building scalable data solutions and cloud infrastructure. My expertise lies in designing and implementing robust data pipelines that handle massive volumes of data while ensuring high performance and reliability.</p>
+                    
+                    <p>Throughout my career, I've worked with diverse teams to transform raw data into actionable insights, helping organizations make data-driven decisions. I'm particularly skilled in cloud technologies, with extensive experience in AWS services, and have a proven track record of optimizing data workflows and reducing infrastructure costs.</p>
+                    
+                    <p>When I'm not working with data, I enjoy exploring new technologies, contributing to open-source projects, and staying updated with the latest trends in data engineering and cloud computing. I believe in continuous learning and am always excited to take on new challenges that push the boundaries of what's possible with data.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>3.6+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>50+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>10TB+</h4>
+                        <p>Daily Data Processing</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>99.9%</h4>
+                        <p>Pipeline Uptime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-animate">
+            <h3>Get In Touch</h3>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (234) 567-8900</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Your City, Your State</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/your-profile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
